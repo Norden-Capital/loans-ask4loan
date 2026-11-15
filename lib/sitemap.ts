@@ -44,6 +44,7 @@ const pageLastModified = {
   faq: "2026-08-07",
   comparisons: "2026-08-07",
   guides: "2026-08-07",
+  unsubscribe: "2026-11-15",
 };
 
 type PageGroup = keyof typeof pageLastModified;
@@ -153,6 +154,7 @@ export function getSitemapEntries(section: SitemapSection): MetadataRoute.Sitema
     page("/contact", "contact", 0.7, "monthly"),
     page("/privacy-policy", "privacyPolicy", 0.4, "yearly"),
     page("/terms-of-use", "termsOfUse", 0.4, "yearly"),
+    page("/unsubscribe", "unsubscribe", 0.3, "yearly"),
   ];
 }
 
